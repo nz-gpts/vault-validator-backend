@@ -4,7 +4,7 @@ from fastapi import APIRouter
 
 router = APIRouter()
 
-@router.get("/vaultctl/health")
+@router.get("/health")
 async def healthcheck():
     return {"status": "vaultctl ready"}
 
